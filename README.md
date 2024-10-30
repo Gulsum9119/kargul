@@ -1,1 +1,1 @@
-# kargul
+# kargul туц
