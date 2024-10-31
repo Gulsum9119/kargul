@@ -14,7 +14,7 @@ body {
     background-color: #fcfcfa;
     font-family: rubik;
 }
-h1, h2, h3, h4, a, p{
+h1, h2, h3, h4,h6, a, p{
     font-family: ofont;
 }
 
@@ -52,7 +52,12 @@ div.header div.logo{
 div.header div.nav{
     width: 50%;
     text-align: right;
+  
+  
 }
+.nav ul a {
+    margin-right: 10px;
+  }
 
 div.header div.nav li{
     list-style-type: none;
@@ -152,6 +157,10 @@ section.icons{
     margin: 25px;
     gap: 15px;
 }
+.flowers_image_incide{
+    display: flex;
+    gap: 200px;
+}
 section.product{
 margin-top: 30px;
 font-size: 45px;
@@ -178,86 +187,123 @@ font-size: 45px;
     background: rgb(255, 255, 255); /* Цвет линии бургер-меню */
     margin: 6px 0; 
 }
+/* Стили для мобильной версии */
 @media (max-width: 768px) {
-.header{
-    display: flex;
-    justify-content: center;
-    gap: 350px;
-    height: 120px;
-}
-.nav {
-        display: none; /* Скрываем навигацию на малых экранах */
-        width: 100%; /* Ширина меню на весь экран */
-        background-color: none; /* Цвет фона для выпадающего меню */
-        position: absolute; /* Позиционирование */
-        top: 60px; /* Расположение под хедером */
-        left: 200px; /* Сбоку от левого края */
-        z-index: 1000; /* Чтобы было поверх других элементов */
-    }
-
-.nav.active {
-        display: block; /* Показываем меню при активном состоянии */
-    }
-.nav.active ul {
-        flex-direction: column; /* Вертикальное направление для меню */
-        align-items: center; /* Центрируем пункты */
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-.menu-burger_header {
-        display: block; /* Показываем бургер-меню на малых экранах */
-    }
-.order_place{
-    display: flex;
-    flex-direction: column;
-align-items: center;}
-}
-@media (max-width: 522px) {
-.header{
-    background-color: rgba(255, 184, 161, 0.685);
-        display: flex;
-        justify-content: center;
-        gap: 350px;
-        height: 120px;
-    }
-.nav {
-            right: 450px;;
-            display: none; /* Скрываем навигацию на малых экранах */
-            width: 100%; /* Ширина меню на весь экран */
-            background-color: none; /* Цвет фона для выпадающего меню */
-            position: absolute; /* Позиционирование */
-            top: 60px; /* Расположение под хедером */
-            left: 200px; /* Сбоку от левого края */
-            z-index: 1000; /* Чтобы было поверх других элементов */
-            display: flex;
-            gap: 44px;
-        }
-    
-.nav.active {
-            display: block; /* Показываем меню при активном состоянии */
-        }
-.nav.active ul {
-            flex-direction: column; /* Вертикальное направление для меню */
-            align-items: center; /* Центрируем пункты */
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            gap: 4px;
-            gap: 4px;
-
-        }
-    
-.menu-burger_header {
-            display: block; /* Показываем бургер-меню на малых экранах */
-        }
-.order_place {
+    .header {
         display: flex;
         flex-direction: column;
-    align-items: center;}
-    
+        align-items: center;
+    }
+
+    .logo {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .nav ul a {
+        text-align: center;
+    }
+
+    .menu-burger_header {
+        display: block; /* Показать кнопку меню */
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .order_place {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left_order_place, .right_order_place {
+        width: 100%;
+    }
+
+    .input_information input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .short_icons {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .icons_image {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_social {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social_image {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    /* Стили для кнопки меню */
+.all_products{
+    display: flex;
+    flex-direction: column;
+
 }
+.flowers_image_incide{
+    display: flex;
+    flex-direction: column;
+
+}
+}
+
+
+
+
 .all_products{
     display: flex;
     flex-direction: column;
@@ -281,3 +327,111 @@ align-items: center;}
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
+
+
+
+
+
+
+
+
+
+
+
+
+  .about-us {
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container img {
+    width: 45%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.container .text {
+    width: 50%;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .container img {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .container .text {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.review {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px; /* Ширина отзыва */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.quote {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.author {
+    text-align: right;
+    color: #888;
+}
+
+.top_z{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
